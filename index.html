@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia · Estudio interactivo</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Historia <span class="subtitle">Estudio interactivo</span></h1>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="antiguo">Antiguo Régimen</button>
+      <button class="tab" data-view="liberales">Revoluciones Liberales</button>
+      <button class="tab" data-view="francesa">Revolución Francesa</button>
+      <button class="tab" data-view="colonial">Colonialismo e Imperialismo</button>
+      <button class="tab" data-view="conexiones">Conexiones</button>
+    </nav>
+    <div class="modes">
+      <button class="mode-btn active" data-mode="lectura">Lectura</button>
+      <button class="mode-btn" data-mode="flash">Flashcards</button>
+      <button class="mode-btn" data-mode="quiz">Quiz</button>
+      <button class="mode-btn" data-mode="timeline">Cronología</button>
+    </div>
+  </header>
+
+  <main id="content" class="content"></main>
+
+  <footer class="footer">
+    <small>Progreso: <span id="progress">0</span>% &middot; Tu avance se guarda en este navegador.</small>
+    <button id="reset" class="link">Reiniciar progreso</button>
+  </footer>
+
+  <script src="js/data/antiguo.js"></script>
+  <script src="js/data/liberales.js"></script>
+  <script src="js/data/francesa.js"></script>
+  <script src="js/data/colonial.js"></script>
+  <script src="js/data/conexiones.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/views/lectura.js"></script>
+  <script src="js/views/flash.js"></script>
+  <script src="js/views/quiz.js"></script>
+  <script src="js/views/timeline.js"></script>
+  <script src="js/views/conexiones.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
