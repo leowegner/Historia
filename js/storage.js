@@ -30,7 +30,7 @@ window.Storage = (function () {
   function progressPercent() {
     const p = load();
     let total = 0, done = 0;
-    ["antiguo","liberales","francesa","colonial"].forEach(t => {
+    ["antiguo","liberales","francesa","industriales","colonial"].forEach(t => {
       const data = window.DATA[t];
       if (!data) return;
       total += data.flash.length + data.quiz.length;
